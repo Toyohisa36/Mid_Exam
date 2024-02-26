@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    animation: transisiIn 0.5s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes transisiIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+}
+
+p {
+    text-align: justify;
+}
+
+.welcome {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 400;
+    color: gray;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    letter-spacing: .5rem;
+}
+
+.welcome::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 50%;
+}
+
+.kanan img {
+    border-radius: 50%;
+    height: 350px;
+}
+
+/* #pendidikan table{
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+    text-align: left;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+
+#pendidikan table th, table td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.jud {
+    text-align: center;
+} */
+
+#skills {
+    padding: 2rem 0;
+    background-color: rgb(230, 230, 230);
+}
+
+.main-container {
+    margin-left: 40px;
+}
+
+.skil-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin margin-top: 50px;
+}
+
+.education {
+    display: flex;
+    gap: 2rem;
+}
+
+.education .line {
+    padding: 0 .7rem;
+}
+
+.education .line div {
+    width: 2px;
+    height: 10%;
+    background-color: gray;
+    position: relative;
+}
+
+.edu-info {
+    margin: .6rem 0 1.4rem;
+}
+
+.edu-years {
+    margin-bottom: 3rem;
+}
+
+.skil-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+}
+
+.skil-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
